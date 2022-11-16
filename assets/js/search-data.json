@@ -1,0 +1,64 @@
+{
+  
+    
+        "post0": {
+            "title": "Binary Calculator",
+            "content": "TODO .",
+            "url": "https://davidvasilev1.github.io//group-tri2/markdown/2022/11/15/binary-calculator.html",
+            "relUrl": "/markdown/2022/11/15/binary-calculator.html",
+            "date": " • Nov 15, 2022"
+        }
+        
+    
+  
+
+  
+  
+
+  
+      ,"page1": {
+          "title": "About Me",
+          "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
+          "url": "https://davidvasilev1.github.io//group-tri2/about/",
+          "relUrl": "/about/",
+          "date": ""
+      }
+      
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+      ,"page11": {
+          "title": "",
+          "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
+          "url": "https://davidvasilev1.github.io//group-tri2/robots.txt",
+          "relUrl": "/robots.txt",
+          "date": ""
+      }
+      
+  
+
+}
