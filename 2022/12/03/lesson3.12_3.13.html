@@ -90,7 +90,17 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h2"><a href="#Topic-3.12-(3A)-Calling-&-Understanding-Procedures---Kaiden-&-Amay">Topic 3.12 (3A) Calling &amp; Understanding Procedures - Kaiden &amp; Amay </a></li>
+<li class="toc-entry toc-h2"><a href="#Topic-3.12-(3A)-Calling-&-Understanding-Procedures---Kaiden-&-Amay">Topic 3.12 (3A) Calling &amp; Understanding Procedures - Kaiden &amp; Amay </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Overview:-Learning-Objectives">Overview: Learning Objectives </a></li>
+<li class="toc-entry toc-h3"><a href="#What-is-a-procedure?">What is a procedure? </a></li>
+<li class="toc-entry toc-h3"><a href="#Calling-Procedures">Calling Procedures </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Quiz-(Part-of-Hacks)">Quiz (Part of Hacks) </a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toc-entry toc-h2"><a href="#Topic-3.13-(3B)-Managing-Complexity---Safin">Topic 3.13 (3B) Managing Complexity - Safin </a></li>
 <li class="toc-entry toc-h2"><a href="#Topic-3.13-(3C)-Developing-Procedures---David-&-Alex">Topic 3.13 (3C) Developing Procedures - David &amp; Alex </a></li>
 <li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a>
@@ -113,6 +123,120 @@ window.onload = wrap_img;
 <h2 id="Topic-3.12-(3A)-Calling-&amp;-Understanding-Procedures---Kaiden-&amp;-Amay">
 <a class="anchor" href="#Topic-3.12-(3A)-Calling-&amp;-Understanding-Procedures---Kaiden-&amp;-Amay" aria-hidden="true"><span class="octicon octicon-link"></span></a>Topic 3.12 (3A) Calling &amp; Understanding Procedures - Kaiden &amp; Amay<a class="anchor-link" href="#Topic-3.12-(3A)-Calling-&amp;-Understanding-Procedures---Kaiden-&amp;-Amay"> </a>
 </h2>
+<h3 id="Overview:-Learning-Objectives">
+<a class="anchor" href="#Overview:-Learning-Objectives" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview: Learning Objectives<a class="anchor-link" href="#Overview:-Learning-Objectives"> </a>
+</h3>
+<ul>
+<li>Basics of Procedures</li>
+<li>Calling Procedures</li>
+<li>Determine Results of Procedures</li>
+</ul>
+<h3 id="What-is-a-procedure?">
+<a class="anchor" href="#What-is-a-procedure?" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is a procedure?<a class="anchor-link" href="#What-is-a-procedure?"> </a>
+</h3>
+<ul>
+<li>A procedure is a named set of instructions that can take in parameters and return values.<ul>
+<li>May be called "method" or "function" in different programming languages.</li>
+</ul>
+</li>
+<li>Parameters are independent variables used in the procedure to produce a result.</li>
+<li>Procedures can be classified as sequencing, selection, and iteration. How?</li>
+</ul>
+<p>Example:</p>
+<ul>
+<li>What is the procedure's name?</li>
+<li>What are the parameters?</li>
+<li>What did the procedure return?</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">3</span>
+
+<span class="k">def</span> <span class="nf">multiply</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="n">product</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span>
+    <span class="k">return</span> <span class="n">product</span>
+
+<span class="n">answer</span> <span class="o">=</span> <span class="n">multiply</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The product of"</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="s2">"times"</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s2">"is"</span><span class="p">,</span> <span class="n">answer</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The product of 5 times 3 is 15
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Calling-Procedures">
+<a class="anchor" href="#Calling-Procedures" aria-hidden="true"><span class="octicon octicon-link"></span></a>Calling Procedures<a class="anchor-link" href="#Calling-Procedures"> </a>
+</h3>
+<ul>
+<li>To call a procedure you would write the <strong>name of the procedure</strong> followed by the <strong>parentheses with the parameters</strong> of the procedure</li>
+<li>Procedures do not require parameters, but the parentheses must be there</li>
+</ul>
+<p>Ex:</p>
+<ul>
+<li>procedureName(parameter1, parameter2, ...)</li>
+<li>How would you call this procedure?</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">def</span> <span class="nf">math</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">op1</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+    <span class="n">op2</span> <span class="o">=</span> <span class="n">op1</span> <span class="o">-</span> <span class="mi">9</span>
+    <span class="k">return</span> <span class="n">op2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Quiz-(Part-of-Hacks)">
+<a class="anchor" href="#Quiz-(Part-of-Hacks)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quiz (Part of Hacks)<a class="anchor-link" href="#Quiz-(Part-of-Hacks)"> </a>
+</h4>
 </div>
 </div>
 </div>
@@ -144,8 +268,8 @@ window.onload = wrap_img;
 <a class="anchor" href="#Topic-3.12-(3A):" aria-hidden="true"><span class="octicon octicon-link"></span></a>Topic 3.12 (3A):<a class="anchor-link" href="#Topic-3.12-(3A):"> </a>
 </h3>
 <ol>
-<li>
-<li>
+<li>Define <strong>procedure</strong> and <strong>parameter</strong> in your own words</li>
+<li>Paste a screenshot of completion of the quiz</li>
 <li>### Topic 3.13 (3B):</li>
 <li>### Topic 3.13 (3C):</li>
 <li>
