@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -94,7 +94,8 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h3"><a href="#Overview:-Learning-Objectives">Overview: Learning Objectives </a></li>
 <li class="toc-entry toc-h3"><a href="#What-is-a-procedure?">What is a procedure? </a></li>
-<li class="toc-entry toc-h3"><a href="#Calling-Procedures">Calling Procedures </a>
+<li class="toc-entry toc-h3"><a href="#Calling-Procedures">Calling Procedures </a></li>
+<li class="toc-entry toc-h3"><a href="#Determining-the-Result-of-a-Procedure">Determining the Result of a Procedure </a>
 <ul>
 <li class="toc-entry toc-h4"><a href="#Quiz-(Part-of-Hacks)">Quiz (Part of Hacks) </a></li>
 </ul>
@@ -226,6 +227,80 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Determining-the-Result-of-a-Procedure">
+<a class="anchor" href="#Determining-the-Result-of-a-Procedure" aria-hidden="true"><span class="octicon octicon-link"></span></a>Determining the Result of a Procedure<a class="anchor-link" href="#Determining-the-Result-of-a-Procedure"> </a>
+</h3>
+<ul>
+<li>To determine the result of a procedure, you must follow the code line by line and see what each one does</li>
+<li>Using syntax, you can determine the result by<ul>
+<li>output parameters</li>
+<li>return codes</li>
+</ul>
+</li>
+<li>To use return codes, you have to write the syntax <strong>return</strong> followed by the variable you would like to return <strong>var</strong>
+</li>
+</ul>
+<p>Ex:</p>
+<ul>
+<li>
+<p>return x</p>
+</li>
+<li>
+<p>This effectively exits a function and instructs python to continue executing the program and to return a certain value</p>
+</li>
+<li>Value can be string, a tuple, or any other object that is being sent back to the main program </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Figure out why this function doesn't work:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">find_cube</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">num</span> <span class="o">*</span> <span class="n">num</span> <span class="o">*</span> <span class="n">num</span>
+    
+<span class="n">cube</span> <span class="o">=</span> <span class="n">find_cube</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Cube:'</span><span class="p">,</span><span class="n">cube</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Cube: None
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
