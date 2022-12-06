@@ -94,12 +94,12 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h3"><a href="#Overview:-Learning-Objectives">Overview: Learning Objectives </a></li>
 <li class="toc-entry toc-h3"><a href="#What-is-a-procedure?">What is a procedure? </a></li>
-<li class="toc-entry toc-h3"><a href="#Calling-Procedures">Calling Procedures </a></li>
-<li class="toc-entry toc-h3"><a href="#Determining-the-Result-of-a-Procedure">Determining the Result of a Procedure </a>
+<li class="toc-entry toc-h3"><a href="#Calling-Procedures">Calling Procedures </a>
 <ul>
 <li class="toc-entry toc-h4"><a href="#Quiz-(Part-of-Hacks)">Quiz (Part of Hacks) </a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h3"><a href="#Determining-the-Result-of-a-Procedure">Determining the Result of a Procedure </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#Topic-3.13-(3B)-Managing-Complexity---Safin">Topic 3.13 (3B) Managing Complexity - Safin </a></li>
@@ -238,6 +238,53 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Quiz-(Part-of-Hacks)">
+<a class="anchor" href="#Quiz-(Part-of-Hacks)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quiz (Part of Hacks)<a class="anchor-link" href="#Quiz-(Part-of-Hacks)"> </a>
+</h4>
+<p>Complete this quiz:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">questionNum</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">questions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"What is are correct names for a procedure? </span><span class="se">\n</span><span class="s2"> A) Method </span><span class="se">\n</span><span class="s2"> B) Function </span><span class="se">\n</span><span class="s2"> C) Both"</span><span class="p">,</span> <span class="s2">"What is a procedure? </span><span class="se">\n</span><span class="s2"> A) Sequencing </span><span class="se">\n</span><span class="s2"> B) Selection </span><span class="se">\n</span><span class="s2"> C) Iteration </span><span class="se">\n</span><span class="s2"> D) All"</span><span class="p">,</span> <span class="s2">"Use this for following question: </span><span class="se">\n</span><span class="s2"> def inchesToFeet(lengthInches): </span><span class="se">\n\t</span><span class="s2"> lengthFeet = lengthInches / 12 </span><span class="se">\n\t</span><span class="s2"> return lengthFeet </span><span class="se">\n\n</span><span class="s2"> What is the procedure name, the parameter, and what the procedure returns? </span><span class="se">\n</span><span class="s2"> A) feetToInches, lengthInches, lengthMeters </span><span class="se">\n</span><span class="s2"> B) inchesToFeet, lengthInches, lengthFeet </span><span class="se">\n</span><span class="s2"> C) inchesToFeet, lengthFeet, lengthInches </span><span class="se">\n</span><span class="s2"> D) lengthInches, inchesToFeet, lengthFeet"</span><span class="p">]</span>
+<span class="n">answers</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"c"</span><span class="p">,</span> <span class="s2">"d"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">qna</span><span class="p">(</span><span class="n">question</span><span class="p">,</span> <span class="n">answer</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Question:"</span><span class="p">,</span> <span class="n">question</span><span class="p">)</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Answer:"</span><span class="p">,</span> <span class="n">response</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">answer</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Correct :) </span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+        <span class="k">global</span> <span class="n">correct</span>
+        <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Incorrect :( </span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">questionNum</span><span class="p">):</span>
+    <span class="n">qna</span><span class="p">(</span><span class="n">questions</span><span class="p">[</span><span class="n">x</span><span class="p">],</span> <span class="n">answers</span><span class="p">[</span><span class="n">x</span><span class="p">])</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Score:"</span><span class="p">,</span> <span class="n">correct</span><span class="p">,</span> <span class="s2">"/ 3"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Determining-the-Result-of-a-Procedure">
 <a class="anchor" href="#Determining-the-Result-of-a-Procedure" aria-hidden="true"><span class="octicon octicon-link"></span></a>Determining the Result of a Procedure<a class="anchor-link" href="#Determining-the-Result-of-a-Procedure"> </a>
 </h3>
@@ -303,53 +350,6 @@ Then convert the binary output into decimal form:</p>
 </div>
 </div>
 
-</div>
-</div>
-
-</div>
-    
-
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Quiz-(Part-of-Hacks)">
-<a class="anchor" href="#Quiz-(Part-of-Hacks)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quiz (Part of Hacks)<a class="anchor-link" href="#Quiz-(Part-of-Hacks)"> </a>
-</h4>
-<p>Complete this quiz:</p>
-
-</div>
-</div>
-</div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">questionNum</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">questions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"What is are correct names for a procedure? </span><span class="se">\n</span><span class="s2"> A) Method </span><span class="se">\n</span><span class="s2"> B) Function </span><span class="se">\n</span><span class="s2"> C) Both"</span><span class="p">,</span> <span class="s2">"What is a procedure? </span><span class="se">\n</span><span class="s2"> A) Sequencing </span><span class="se">\n</span><span class="s2"> B) Selection </span><span class="se">\n</span><span class="s2"> C) Iteration </span><span class="se">\n</span><span class="s2"> D) All"</span><span class="p">,</span> <span class="s2">"Use this for following question: </span><span class="se">\n</span><span class="s2"> def inchesToFeet(lengthInches): </span><span class="se">\n\t</span><span class="s2"> lengthFeet = lengthInches / 12 </span><span class="se">\n\t</span><span class="s2"> return lengthFeet </span><span class="se">\n\n</span><span class="s2"> What is the procedure name, the parameter, and what the procedure returns? </span><span class="se">\n</span><span class="s2"> A) feetToInches, lengthInches, lengthMeters </span><span class="se">\n</span><span class="s2"> B) inchesToFeet, lengthInches, lengthFeet </span><span class="se">\n</span><span class="s2"> C) inchesToFeet, lengthFeet, lengthInches </span><span class="se">\n</span><span class="s2"> D) lengthInches, inchesToFeet, lengthFeet"</span><span class="p">]</span>
-<span class="n">answers</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"c"</span><span class="p">,</span> <span class="s2">"d"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">]</span>
-
-<span class="k">def</span> <span class="nf">qna</span><span class="p">(</span><span class="n">question</span><span class="p">,</span> <span class="n">answer</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Question:"</span><span class="p">,</span> <span class="n">question</span><span class="p">)</span>
-    <span class="n">response</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Answer:"</span><span class="p">,</span> <span class="n">response</span><span class="p">)</span>
-    
-    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">answer</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Correct :) </span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-        <span class="k">global</span> <span class="n">correct</span>
-        <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Incorrect :( </span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">questionNum</span><span class="p">):</span>
-    <span class="n">qna</span><span class="p">(</span><span class="n">questions</span><span class="p">[</span><span class="n">x</span><span class="p">],</span> <span class="n">answers</span><span class="p">[</span><span class="n">x</span><span class="p">])</span>
-    
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Score:"</span><span class="p">,</span> <span class="n">correct</span><span class="p">,</span> <span class="s2">"/ 3"</span><span class="p">)</span>
-</pre></div>
-
-    </div>
 </div>
 </div>
 
