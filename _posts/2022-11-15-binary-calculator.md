@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [markdown]
-title: Binary Calculator
+title: 
 ---
 
 TODO
