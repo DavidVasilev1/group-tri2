@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      7 min read
     
 </span></p>
 
@@ -115,7 +115,9 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h4"><a href="#Example">Example </a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h3"><a href="#Vocab-review">Vocab review </a></li>
 <li class="toc-entry toc-h3"><a href="#Parameters">Parameters </a></li>
+<li class="toc-entry toc-h3"><a href="#Calling-functions">Calling functions </a></li>
 <li class="toc-entry toc-h3"><a href="#Calling-Functions">Calling Functions </a></li>
 </ul>
 </li>
@@ -466,9 +468,130 @@ Then convert the binary output into decimal form:</p>
 <li>What operation is being done?</li>
 <li>what would the output of this code be?</li>
 </ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Vocab-review">
+<a class="anchor" href="#Vocab-review" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vocab review<a class="anchor-link" href="#Vocab-review"> </a>
+</h3>
+<ul>
+<li>Procedure - a module of code that is created to complete a certain task, this is basically a function</li>
+<li>Procedure Name - the name that is given to a function/procedure</li>
+<li>Parameters - a variable that is used in a function to allow for data to be imported into a function</li>
+<li>Arguments - a way to provide information to a function, usually defined outside a function and then imported into a function with parameters</li>
+</ul>
 <h3 id="Parameters">
 <a class="anchor" href="#Parameters" aria-hidden="true"><span class="octicon octicon-link"></span></a>Parameters<a class="anchor-link" href="#Parameters"> </a>
 </h3>
+<ul>
+<li>In functions, there are sometimes parameters that the functions have in which you can call to the function giving arguements that will provide input to the function
+For example:</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">function</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">num1</span> <span class="o">&gt;</span> <span class="n">num2</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"num1 is greater than num2"</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">num1</span> <span class="o">&lt;</span><span class="n">num2</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"num1 is less than num 2"</span><span class="p">)</span>
+
+<span class="n">num1</span><span class="o">=</span> <span class="mi">6</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">function</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span><span class="n">num2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>num1 is less than num 2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>In this <code>`function</code>, it takes in two parameters <code>num1</code> and <code>num2</code>
+</li>
+<li>Whithin this function it uses conditionals to determine if num 1 is larger or smaller than num2</li>
+<li>When calling to this <code>function</code> we must put in two arguements, num1 and num2 respectively</li>
+<li>We put in 6 for num1 and 8 for num2 and the algorithm runs and gives us an outcome</li>
+</ul>
+<p>This basic function in python can be recreated in Javasript</p>
+<div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">compare</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">a</span><span class="o">&gt;</span><span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"a is greater than b"</span><span class="p">)</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">a</span><span class="o">&lt;</span><span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"a is less than b"</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">compare</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="mf">5</span><span class="p">)</span>
+</pre></div>
+<ul>
+<li>what are the parameters?</li>
+<li>What is the output?</li>
+<li>what are the arguements?</li>
+</ul>
+<h3 id="Calling-functions">
+<a class="anchor" href="#Calling-functions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Calling functions<a class="anchor-link" href="#Calling-functions"> </a>
+</h3>
+<ul>
+<li>When calling functions, you have to ask yourself some questions<ul>
+<li>Does the function have any parameters?</li>
+<li>does the parameter have output?</li>
+</ul>
+</li>
+<li>Depending on these answers, the way you will call to a function will be different</li>
+</ul>
+<p>Example where it does does have parameters and gives output</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">InchestoFeet</span><span class="p">(</span><span class="n">inches</span><span class="p">):</span>
+    <span class="n">Feet</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">Feet</span> <span class="o">=</span> <span class="n">inches</span> <span class="o">/</span> <span class="mi">12</span>
+    <span class="k">return</span> <span class="n">Feet</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">InchestoFeet</span><span class="p">(</span><span class="mi">24</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</pre></div>
+
+<pre><code>2</code></pre>
+<ul>
+<li>If you look closely, there is a <code>return</code> at the end of the function, this returns a value when you call the function</li>
+<li>This is why we have to set a variable, in this case <code>result</code> equal to the output of the function. </li>
+<li>Also one thing to notice is that this function also takes in a parameter called inches</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Calling-Functions">
 <a class="anchor" href="#Calling-Functions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Calling Functions<a class="anchor-link" href="#Calling-Functions"> </a>
 </h3>
