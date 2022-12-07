@@ -422,6 +422,6 @@ pre *, code *, .highlight * { font-size: 0.9rem !important; background-color: #1
 
 .input_area pre { border-left: 1px solid #fbfbfb !important; }
 
-tt, code { font-size: 18px; }
+tt, code { font-size: 18px !important; }
 
 /*# sourceMappingURL=style.css.map */
