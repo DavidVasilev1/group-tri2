@@ -12,9 +12,17 @@
 
 html, body, input, textarea, select, button {
   font-size: 110% !important;
-  
 }
+
 pre *, code *, .highlight * {
   font-size: 0.9rem !important;
   background-color: #1E1E1E !important;
+}
+
+.input_area pre, .input_area div {
+  background: #1E1E1E !important;
+}
+
+.input_area pre {
+  border-left: 1px solid #fbfbfb !important;
 }
