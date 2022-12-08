@@ -855,6 +855,29 @@ For example:</li>
 <li>This is why we have to set a variable, in this case <code>result</code> equal to the output of the function. </li>
 <li>Also one thing to notice is that this function also takes in a parameter called inches</li>
 </ul>
+<p>Here's an example of calling functions in HTML with Javascript:</p>
+<p><button id="enter" onclick="print(a,b)">HI</button></p>
+<p></p>
+<p id="result"></p>
+<script>
+    function print(a,b) {
+        document.getElementById("result").innerHTML = a + b
+    }
+    var a = 1
+    var b = 2
+</script><div class="highlight"><pre><span></span><span class="c">&lt;!-- function is called here --&gt;</span>
+<span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">"enter"</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"print(a,b)"</span><span class="p">&gt;</span>HI<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">"result"</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="c">&lt;!-- javascript --&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="kd">function</span> <span class="nx">print</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"result"</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span> <span class="c1">// math</span>
+    <span class="p">}</span>
+    <span class="c1">// variables are defined</span>
+    <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mf">1</span>
+    <span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="mf">2</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
 
 </div>
 </div>
