@@ -323,30 +323,34 @@ window.onload = wrap_img;
 <li>
 <p>Using syntax, you can determine the result by</p>
 <ul>
-<li>output parameters</li>
-<li>return codes</li>
+<li>function parameters</li>
+<li>return value and statements</li>
 </ul>
 </li>
 </ul>
 <ul>
-<li>To use return codes, you have to write the syntax <font color="#ffffc2" style="font-weight: bold">return</font> followed by the variable you would like to return <font color="#ffffc2" style="font-weight: bold">var</font>
+<li>To use return values, you have to write the syntax <font color="#ffffc2" style="font-weight: bold">return</font> followed by the variable you would like to return <font color="#ffffc2" style="font-weight: bold">var</font>
 </li>
 </ul>
 <ul>
-<li>Return Code exits a function and instructs python to continue executing the program and to return a certain value</li>
 <li>
-<p>Value can be string, a tuple, or any other object that is being sent back to the main program</p>
+<p>Return statements exits a function and instructs python to continue executing the program and to return a certain value</p>
+</li>
+<li>
+<p>Value can be string, a tuple, or any other type that is being sent back to the main program</p>
+</li>
+</ul>
 <p>Ex:</p>
-
-<pre><code>return x</code></pre>
-</li>
-</ul>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span><span class="n">num2</span><span class="p">):</span>
+      <span class="n">x</span> <span class="o">=</span> <span class="n">num1</span><span class="o">/</span><span class="n">num2</span>
+      <span class="k">return</span> <span class="n">x</span>
+</pre></div>
 <ul>
 <li>
-<p>As a reminder, to use output parameters, you would have to write the syntax  <font color="#ffffc2" style="font-weight: bold">name of the function</font> followed by the parameters needed in parentheses</p>
+<p>As a reminder, to use function parameters, you would have to write the syntax  <font color="#ffffc2" style="font-weight: bold">name of the function</font> followed by the parameters needed in parentheses</p>
 </li>
 <li>
-<p>Output parameters are the parameters that are fetched from the response of a service call, and ultimately calls the function</p>
+<p>Function parameters are the parameters that are used when calling the function in order to get a result.</p>
 </li>
 </ul>
 
@@ -356,7 +360,7 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>What are the output parameters in this function, and what do they do?</p>
+<p>What are the function parameters in this function, and what do they do?</p>
 
 </div>
 </div>
