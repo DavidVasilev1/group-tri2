@@ -414,9 +414,11 @@ li .post-meta-description { color: rgba(255, 255, 255, 0.69) !important; }
 
 p code { font-size: 19px; }
 
+pre *, code *, .highlight *, pre, code { font-size: 0.9rem !important; background-color: #1E1E1E !important; }
+
 html, body, input, textarea, select, button { font-size: 110% !important; }
 
-pre *, code *, .highlight * { font-size: 0.9rem !important; background-color: #1E1E1E !important; }
+pre *, code *, .highlight *, pre, code { font-size: 0.9rem !important; background-color: #1E1E1E !important; }
 
 .input_area pre, .input_area div { background: #1E1E1E !important; }
 
