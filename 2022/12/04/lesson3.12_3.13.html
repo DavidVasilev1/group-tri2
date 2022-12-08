@@ -318,23 +318,30 @@ window.onload = wrap_img;
 </h3>
 <ul>
 <li>To determine the result of a procedure, you must follow the code line by line and see what each one does</li>
-<li>Using syntax, you can determine the result by<ul>
+<li>
+<p>Using syntax, you can determine the result by</p>
+<ul>
 <li>output parameters</li>
 <li>return codes</li>
 </ul>
 </li>
-<li>To use return codes, you have to write the syntax <font color="#ffffc2" style="font-weight: bold">return</font> followed by the variable you would like to return <font color="#ffffc2" style="font-weight: bold">var</font>
+<li>
+<p>To use return codes, you have to write the syntax <font color="#ffffc2" style="font-weight: bold">return</font> followed by the variable you would like to return <font color="#ffffc2" style="font-weight: bold">var</font></p>
 </li>
-</ul>
-<p>Ex:</p>
-<ul>
+<li>
+<p>Return Codes exits a function and instructs python to continue executing the program and to return a certain value</p>
+</li>
+<li>Value can be string, a tuple, or any other object that is being sent back to the main program 
+Ex: </li>
 <li>
 <p>return x</p>
 </li>
 <li>
-<p>This effectively exits a function and instructs python to continue executing the program and to return a certain value</p>
+<p>As a reminder, to use output parameters, you would have to write the syntax  <font color="#ffffc2" style="font-weight: bold">name of the function</font> followed by the parameters needed in parentheses</p>
 </li>
-<li>Value can be string, a tuple, or any other object that is being sent back to the main program </li>
+<li>
+<p>Output parameters are the parameters that are fetched from the response of a service call, and ultimately calls the function</p>
+</li>
 </ul>
 
 </div>
@@ -343,8 +350,36 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Figure out why this function doesn't work, 
-Then convert the binary output into decimal form:</p>
+<p>What are the output parameters in this function, and what do they do?</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">function</span><span class="p">(</span><span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">):</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">first_name</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">last_name</span><span class="p">)</span>
+
+<span class="n">function</span><span class="p">(</span><span class="s2">"Peter"</span><span class="p">,</span><span class="s2">"Parker"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>What is wrong with the function?</p>
+<p>Translate the binary number into decimal notation.</p>
 
 </div>
 </div>
@@ -894,7 +929,7 @@ For example:</li>
 <ol>
 <li>Define <strong>procedure</strong> and <strong>parameter</strong> in your own words</li>
 <li>Paste a <strong>screenshot</strong> of completion of the quiz</li>
-<li>Define <strong>Return Values</strong> in your own words</li>
+<li>Define <strong>Return Values</strong> and <strong>Output Parameters</strong> in your own words</li>
 <li>Code a <strong>procedure</strong> that finds the square root of any given number. (make sure to call and return the function)</li>
 </ol>
 <h3 id="Topic-3.13-(3.B):">
