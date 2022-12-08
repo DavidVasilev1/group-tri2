@@ -363,7 +363,8 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>What are the function parameters in this procedure, and what do they do?</p>
+<p>What are the function parameters in this procedure?</p>
+<p>What values are being passed to the function?</p>
 
 </div>
 </div>
@@ -379,6 +380,7 @@ window.onload = wrap_img;
    <span class="nb">print</span><span class="p">(</span><span class="n">first_name</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">last_name</span><span class="p">)</span>
 
 <span class="n">function</span><span class="p">(</span><span class="s2">"Peter"</span><span class="p">,</span><span class="s2">"Parker"</span><span class="p">)</span>
+<span class="n">function</span><span class="p">(</span><span class="s2">"Safin"</span><span class="p">,</span> <span class="s2">"Singh"</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -392,6 +394,7 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Peter Parker
+Safin Singh
 </pre>
 </div>
 </div>
@@ -405,8 +408,9 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>In the cell above, the function is being called twice, which shows the importance of function in order to accomplish the same thing with different parameters.</p>
 <p>What is wrong with the function?</p>
-<p>Can you translate the binary number into decimal notation?</p>
+<p>Can you translate the binary numbers into decimal notation?</p>
 
 </div>
 </div>
@@ -421,8 +425,10 @@ window.onload = wrap_img;
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">find_cube</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
     <span class="n">result</span> <span class="o">=</span> <span class="nb">bin</span><span class="p">(</span><span class="n">num</span> <span class="o">*</span> <span class="n">num</span> <span class="o">*</span> <span class="n">num</span><span class="p">)</span> 
 <span class="n">cube</span> <span class="o">=</span> <span class="n">find_cube</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">cube2</span> <span class="o">=</span> <span class="n">find_cube</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">'Cube:'</span><span class="p">,</span><span class="n">cube</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Cube:'</span><span class="p">,</span><span class="n">cube2</span> <span class="p">)</span>
 </pre></div>
 
     </div>
@@ -436,6 +442,7 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Cube: None
+Cube: None
 </pre>
 </div>
 </div>
@@ -446,6 +453,14 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Once again, I called the function twice, which is useful, because it allows the coder to do the same thing multiple times with different arguments.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
