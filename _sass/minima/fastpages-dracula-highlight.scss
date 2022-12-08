@@ -1,7 +1,7 @@
 // Override Syntax Highlighting In Minima With the Dracula Theme: https://draculatheme.com/
 // If you wish to override any of this CSS, do so in _sass/minima/custom-styles.css
  
-$dt-gray-dark: #282a36;  // Background
+$dt-gray-dark: #1E1E1E;  // Background
 $dt-code-cell-background: #323443;
 $dt-gray: #44475a;       // Current Line & Selection
 $dt-gray-light: #f8f8f2; // Foreground
@@ -219,4 +219,9 @@ $dt-green-light: rgb(172, 229, 145);
 
 p code{
   font-size: 19px;
+}
+
+pre *, code *, .highlight *, pre, code {
+  font-size: 0.9rem !important;
+  background-color: #1E1E1E !important;
 }
