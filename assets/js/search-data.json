@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "CPT Presentation",
-            "content": "CPT Presentation . Safin . Amay . Alex . David . Kaiden - CALCULATOR FEATURE . How the calculator will look and function: | . The user can type in their expression and the calculator will solve it . Previous functions will be stored above, and can be recalled to be edited . Current Frontend Frame . What it looks like on the website. . Create: each expression and output Read: displaying all previous expressions and outputs Update: can edit previous expressions to receive new outputs that edits the old output Delete: delete individual or all of the previous entries . FUTURE: trying to implement PEMDAS .",
+            "content": "CPT Presentation . Safin . Amay . Alex . David . Kaiden - CALCULATOR FEATURE . How the calculator will look and function: | . The user can type in their expression and the calculator will solve it . Previous functions will be stored above, and can be recalled to be edited . Current Frontend Frame . What it looks like on the website. . Create: each expression and output Read: displaying all previous expressions and outputs Update: can edit previous expressions to receive new outputs that edits the old output Delete: delete individual or all of the previous entries .",
             "url": "https://davidvasilev1.github.io//group-tri2/2023/01/25/CPT-pres.html",
             "relUrl": "/2023/01/25/CPT-pres.html",
             "date": " • Jan 25, 2023"
